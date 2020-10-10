@@ -37,6 +37,7 @@ final class NKMainController: UIViewController {
 				button_Dismiss.backgroundColor = .systemGray4
 			} else {
 				button_Dismiss = UIButton(frame: .zero)
+				button_Dismiss.setTitle("x", for: .normal)
 				button_Dismiss.tintColor = .darkGray
 				button_Dismiss.backgroundColor = .lightGray
 				button_Dismiss.addTarget(self, action: #selector(dismissController), for: .touchUpInside)
