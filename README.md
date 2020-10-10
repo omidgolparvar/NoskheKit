@@ -2,22 +2,20 @@
 
 # نسخه‌کیت
 
+## ویژگی‌ها
+### 📱 پشتیبانی از آیفون و آی‌پد.
+### 😋 خوشگله
+### 🥳 ایز آو یوز.
+
+<br>
+
 ## پیش‌نمایش!
 
-<table>
-  <tr>
-    <td>
-      <img src='./Other/05.png'>
-    </td>
-    <td>
-      <img src='./Other/02.png'>
-    </td>
-    <td>
-      <img src='./Other/03.png'>
-    </td>
-  </tr>
-</table>
+<div style='text-align: center;'>
+  <img src='./Other/screenshot0.png'>
+</div>
 
+<br>
 
 ## این چیکار می‌کنه؟!
 با استفاده از این نیمچه کتابخونه، می‌تونین تغییرات هر نسخه رو بصورت یه لیست نشون بدین. همینطور می‌تونین تغییرات آتی رو هم پیشاپیش به کاربراتون معرفی کنین! 😎
@@ -39,13 +37,17 @@ pod 'NoskheKit'
 ### قدم دوم. نمایش تغییرات
 متد اصلی که کنترلر تغییرات  رو نشون میده، دارای امضای زیر هست:
 
-<pre dir='ltr'>
+<div dir='ltr'>
+
+```swift
 NoskheKit.presentChangesController(
   from               sourceController : UIViewController,
   withData           versionsData     : NKVersionsData,
   andUIConfiguration uiConfiguration  : NKUIConfiguration
 )
-</pre>
+```
+
+</div>
 
 پارامترهایی که این متد می‌گیره بصورت زیر هست:
 - پارامتر `sourceController`: از نوع `UIViewController` هست و در واقع ویوکنترلر مبدا هست.
@@ -86,7 +88,9 @@ Root: Array
 
 - ساختار معتبر JSON برای استفاده از این سازنده بصورت زیرهست:
 
-<pre dir='ltr'>
+<div dir='ltr'>
+
+```
 {
   items: [
     {
@@ -100,7 +104,9 @@ Root: Array
     ...
   ]
 }
-</pre>
+```
+
+</div>
 
 <br>
 
@@ -115,13 +121,17 @@ Root: Array
 ### مدل `NKUIConfiguration`
 این مدل، تنظیمات مربوط به رابط کاربری رو آماده می‌کنه. مشخصه‌های این مدل بصورت زیر هست:
 
-<pre dir='ltr'>
+<div dir='ltr'>
+
+```swift
 class NKUIConfiguration {
   var isRightToLeft: Bool = false
   var submitReviewButtonStatus: SubmitReviewButtonStatus = .notExist
   var versionsDisplayConfiguration: VersionsDisplayConfiguration = .init()
 }
-</pre>
+```
+
+</div>
 
 - مشخصه `isRightToLeft`: مشخص‌کننده این هست که ویوها برای زبان‌های راست‌چین پیکربندی بشن یا نه.
 - مشخصه `submitReviewButtonStatus`: تنظیمات مربوط به دکمه «ثبت نظر» رو آماده میشه.
@@ -139,14 +149,18 @@ class NKUIConfiguration {
 ### مدل `SubmitReviewButtonStatus.Configuration`
 این مدل بصورت زیر هست:
 
-<pre dir='ltr'>
+<div dir='ltr'>
+
+```swift
 class Configuration {
   let title           : String
   var font            : UIFont
   var backgroundColor : UIColor
   var textColor       : UIColor
 }
-</pre>
+```
+
+</div>
 
 - بجز `title`، بقیه مشخصه‌ها دارای مقدار پیش‌فرض هستن.
 
@@ -159,15 +173,20 @@ class Configuration {
 
 ساختار کلی‌شون بصورت زیر هست:
 
-<pre dir='ltr'>
+<div dir='ltr'>
+
+```swift
 class ... {
-  var whatsNew     : WhatsNewUIConfiguration? //ONLY in CurrentVersion...
+  var whatsNew     : WhatsNewUIConfiguration? //ONLY in CurrentVersionDisplayConfiguration
+
   var titleColor   : UIColor
   var titleFont    : UIFont
   var changesColor : UIColor
   var changesFont  : UIFont
 }
-</pre>
+```
+
+</div>
 
 - همه مشخصه‌ها دارای مقدار پیش‌فرض هستن.
 
@@ -176,14 +195,16 @@ class ... {
 ### مدل `WhatsNewUIConfiguration` 
 تنظیمات نمایش What'sNew  رو آماده می‌کنه. دوتا مشخصه بیشتر نداره:
 
-<pre dir='ltr'>
+<div dir='ltr'>
+
+```swift
 struct WhatsNewUIConfiguration {
   var text      : String
   var textColor : UIColor
 }
-</pre>
+```
 
-
+</div>
 
 ## دِ اِند. 😎
 
