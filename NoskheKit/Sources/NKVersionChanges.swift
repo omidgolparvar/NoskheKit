@@ -1,18 +1,18 @@
 import Foundation
 
-public final class NKVersionChanges {
+final class NKVersionChanges {
 	
-	public let changes	: [String]
+	let changes	: [String]
 	
-	public var prefixedChanges: [String] {
+	var prefixedChanges: [String] {
 		return changes.map { "\(Self.PrefixCharacter) \($0)" }
 	}
 	
-	public var fullText: String {
+	var fullText: String {
 		return prefixedChanges.joined(separator: "\n")
 	}
 	
-	public init(changes: [String]) {
+	init(changes: [String]) {
 		self.changes	= changes.map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
 	}
 	
@@ -22,7 +22,7 @@ public final class NKVersionChanges {
 // MARK: CustomDebugStringConvertible
 extension NKVersionChanges: CustomDebugStringConvertible {
 	
-	public var debugDescription: String {
+	var debugDescription: String {
 		let changes = prefixedChanges.joined(separator: "\n")
 		return """
 			Changes:
@@ -36,7 +36,7 @@ extension NKVersionChanges: CustomDebugStringConvertible {
 // MARK: CustomStringConvertible
 extension NKVersionChanges: CustomStringConvertible {
 	
-	public var description: String {
+	var description: String {
 		return fullText
 	}
 	
@@ -46,7 +46,7 @@ extension NKVersionChanges: CustomStringConvertible {
 // MARK: Decodable
 extension NKVersionChanges: Decodable {
 	
-	public convenience init(from decoder: Decoder) throws {
+	convenience init(from decoder: Decoder) throws {
 		let container	= try decoder.container(keyedBy: CodingKeys.self)
 		
 		let changes		= try container.decode([String].self, forKey: .changes)
@@ -64,6 +64,6 @@ extension NKVersionChanges: Decodable {
 // MARK: Static Functions
 extension NKVersionChanges {
 	
-	public static var PrefixCharacter	: Character = "•"
+	static var PrefixCharacter	: Character = "•"
 	
 }

@@ -1,18 +1,18 @@
 import Foundation
 
-public final class NKVersionNumber {
+final class NKVersionNumber {
 	
-	public typealias VersionElement = UInt
+	typealias VersionElement = UInt
 	
-	public let major	: VersionElement
-	public let minor	: VersionElement
-	public let patch	: VersionElement
+	let major	: VersionElement
+	let minor	: VersionElement
+	let patch	: VersionElement
 	
-	public var stringValue: String {
+	var stringValue: String {
 		return "\(major).\(minor).\(patch)"
 	}
 	
-	public convenience init?(string: String) {
+	convenience init?(string: String) {
 		let components = string
 			.trimmingCharacters(in: .whitespacesAndNewlines)
 			.components(separatedBy: ".")
@@ -30,7 +30,7 @@ public final class NKVersionNumber {
 		self.init(major: major_UInt, minor: minor_UInt, patch: patch_UInt)
 	}
 	
-	public init(major: VersionElement, minor: VersionElement = 0, patch: VersionElement = 0) {
+	init(major: VersionElement, minor: VersionElement = 0, patch: VersionElement = 0) {
 		self.major	= major
 		self.minor	= minor
 		self.patch	= patch
@@ -52,7 +52,7 @@ public final class NKVersionNumber {
 // MARK: Equatable
 extension NKVersionNumber: Equatable {
 	
-	public static func == (lhs: NKVersionNumber, rhs: NKVersionNumber) -> Bool {
+	static func == (lhs: NKVersionNumber, rhs: NKVersionNumber) -> Bool {
 		return lhs.major == rhs.major
 			&& lhs.minor == rhs.minor
 			&& lhs.patch == rhs.patch
@@ -64,7 +64,7 @@ extension NKVersionNumber: Equatable {
 // MARK: Comparable
 extension NKVersionNumber: Comparable {
 	
-	public static func < (lhs: NKVersionNumber, rhs: NKVersionNumber) -> Bool {
+	static func < (lhs: NKVersionNumber, rhs: NKVersionNumber) -> Bool {
 		if lhs.major < rhs.major {
 			return true
 		}
@@ -87,7 +87,7 @@ extension NKVersionNumber: Comparable {
 // MARK: Hashable
 extension NKVersionNumber: Hashable {
 	
-	public func hash(into hasher: inout Hasher) {
+	func hash(into hasher: inout Hasher) {
 		hasher.combine(major)
 		hasher.combine(minor)
 		hasher.combine(patch)
@@ -99,7 +99,7 @@ extension NKVersionNumber: Hashable {
 // MARK: CustomDebugStringConvertible
 extension NKVersionNumber: CustomDebugStringConvertible {
 	
-	public var debugDescription: String {
+	var debugDescription: String {
 		return "Version: \(stringValue)"
 	}
 	
@@ -109,7 +109,7 @@ extension NKVersionNumber: CustomDebugStringConvertible {
 // MARK: CustomStringConvertible
 extension NKVersionNumber: CustomStringConvertible {
 	
-	public var description: String {
+	var description: String {
 		return stringValue
 	}
 	
@@ -119,7 +119,7 @@ extension NKVersionNumber: CustomStringConvertible {
 // MARK: Decodable
 extension NKVersionNumber: Decodable {
 	
-	public convenience init(from decoder: Decoder) throws {
+	convenience init(from decoder: Decoder) throws {
 		let container	= try decoder.container(keyedBy: CodingKeys.self)
 		
 		let major		= try container.decode(VersionElement.self, forKey: .major)

@@ -2,9 +2,9 @@ import Foundation
 
 public final class NKVersionsData {
 	
-	public let versionsItems	: [NKVersionData]
+	let versionsItems	: [NKVersionData]
 	
-	public init(items: [NKVersionData]) {
+	init(items: [NKVersionData]) {
 		let versionsItems = items.sorted { $0.number > $1.number }
 		
 		self.versionsItems = versionsItems
@@ -80,8 +80,8 @@ extension NKVersionsData {
 		
 		public static let `default` = PlistFileConfiguration(bundle: .main, fileName: "Versions")
 		
-		public let bundle	: Bundle
-		public let fileName	: String
+		let bundle		: Bundle
+		let fileName	: String
 		
 		public init(bundle: Bundle, fileName: String) {
 			self.bundle		= bundle

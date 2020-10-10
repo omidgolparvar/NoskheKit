@@ -1,12 +1,12 @@
 import Foundation
 
-public final class NKVersionData {
+final class NKVersionData {
 	
-	public let number	: NKVersionNumber
-	public let changes	: NKVersionChanges
-	public let status	: NKVersionStatus
+	let number	: NKVersionNumber
+	let changes	: NKVersionChanges
+	let status	: NKVersionStatus
 	
-	public init(number: NKVersionNumber, changes: NKVersionChanges) {
+	init(number: NKVersionNumber, changes: NKVersionChanges) {
 		self.number		= number
 		self.changes	= changes
 		self.status		= number.status(comparedTo: .current)
@@ -18,7 +18,7 @@ public final class NKVersionData {
 // MARK: Equatable
 extension NKVersionData: Equatable {
 	
-	public static func == (lhs: NKVersionData, rhs: NKVersionData) -> Bool {
+	static func == (lhs: NKVersionData, rhs: NKVersionData) -> Bool {
 		return lhs.number == rhs.number
 	}
 	
@@ -28,7 +28,7 @@ extension NKVersionData: Equatable {
 // MARK: Hashable
 extension NKVersionData: Hashable {
 	
-	public func hash(into hasher: inout Hasher) {
+	func hash(into hasher: inout Hasher) {
 		hasher.combine(number.hashValue)
 	}
 	
@@ -38,7 +38,7 @@ extension NKVersionData: Hashable {
 // MARK: CustomDebugStringConvertible
 extension NKVersionData: CustomDebugStringConvertible {
 	
-	public var debugDescription: String {
+	var debugDescription: String {
 		let versionChanges = changes.prefixedChanges
 			.map { "  \($0)"}
 			.joined(separator: "\n")
@@ -57,7 +57,7 @@ extension NKVersionData: CustomDebugStringConvertible {
 // MARK: CustomStringConvertible
 extension NKVersionData: CustomStringConvertible {
 	
-	public var description: String {
+	var description: String {
 		return """
 			\(number.description):
 			\(changes.description)
@@ -70,7 +70,7 @@ extension NKVersionData: CustomStringConvertible {
 // MARK: Decodable
 extension NKVersionData: Decodable {
 	
-	public convenience init(from decoder: Decoder) throws {
+	convenience init(from decoder: Decoder) throws {
 		let container	= try decoder.container(keyedBy: CodingKeys.self)
 		
 		let number	= try container.decode(NKVersionNumber.self, forKey: .number)
