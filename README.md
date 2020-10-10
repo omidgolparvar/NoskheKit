@@ -12,7 +12,7 @@
 ## پیش‌نمایش!
 
 <div style='text-align: center;'>
-  <img src='./Other/screenshot0.png'>
+  <img src='./Other/screenshot1.png'>
 </div>
 
 <br>
