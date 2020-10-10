@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgo-4C-CdB">
+                                <rect key="frame" x="24" y="427.5" width="366" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
+                                <state key="normal" title="Present NoskheKit"/>
+                                <connections>
+                                    <action selector="presentNoskheKit" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sat-5c-u0W"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lRz-zH-R2u">
+                                <rect key="frame" x="107" y="296.5" width="200" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="wYp-eF-JH1"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="English"/>
+                                    <segment title="پارسی"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlValueChanged" destination="BYZ-38-t0r" eventType="valueChanged" id="tec-vj-j0c"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lRz-zH-R2u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BOk-em-H3H"/>
+                            <constraint firstItem="lgo-4C-CdB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cg1-zV-08e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lgo-4C-CdB" secondAttribute="trailing" constant="24" id="XQq-vf-CaE"/>
+                            <constraint firstItem="lgo-4C-CdB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="b4g-d4-IHg"/>
+                            <constraint firstItem="lgo-4C-CdB" firstAttribute="top" secondItem="lRz-zH-R2u" secondAttribute="bottom" constant="100" id="h4Q-lI-CuB"/>
+                            <constraint firstItem="lgo-4C-CdB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vE6-lJ-OCZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonPresentNoskheKit" destination="lgo-4C-CdB" id="VTS-Op-Q4j"/>
+                        <outlet property="segmentedControl" destination="lRz-zH-R2u" id="Dmt-bC-C7I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

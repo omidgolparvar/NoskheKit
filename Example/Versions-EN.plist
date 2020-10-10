@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>number</key>
+		<string>1.0.0</string>
+		<key>changes</key>
+		<array>
+			<string>Lorem ipsum dolor sit amet.</string>
+			<string>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+			<string>Ut enim ad minim veniam.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>number</key>
+		<string>1.0.1</string>
+		<key>changes</key>
+		<array>
+			<string>Lorem ipsum dolor sit amet.</string>
+			<string>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+			<string>Ut enim ad minim veniam.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>number</key>
+		<string>1.1.0</string>
+		<key>changes</key>
+		<array>
+			<string>Lorem ipsum dolor sit amet.</string>
+			<string>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+			<string>Ut enim ad minim veniam.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>number</key>
+		<string>1.2.0</string>
+		<key>changes</key>
+		<array>
+			<string>Lorem ipsum dolor sit amet.</string>
+			<string>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+			<string>Ut enim ad minim veniam.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>number</key>
+		<string>2.0.1</string>
+		<key>changes</key>
+		<array>
+			<string>Lorem ipsum dolor sit amet.</string>
+			<string>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+			<string>Ut enim ad minim veniam.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>number</key>
+		<string>3.2.1</string>
+		<key>changes</key>
+		<array>
+			<string>Lorem ipsum dolor sit amet.</string>
+			<string>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+			<string>Ut enim ad minim veniam.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>number</key>
+		<string>4.0.6</string>
+		<key>changes</key>
+		<array>
+			<string>Lorem ipsum dolor sit amet.</string>
+			<string>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+			<string>Ut enim ad minim veniam.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>number</key>
+		<string>4.2</string>
+		<key>changes</key>
+		<array>
+			<string>Lorem ipsum dolor sit amet.</string>
+			<string>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+			<string>Ut enim ad minim veniam.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>number</key>
+		<string>5</string>
+		<key>changes</key>
+		<array>
+			<string>Lorem ipsum dolor sit amet.</string>
+			<string>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+			<string>Ut enim ad minim veniam.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>number</key>
+		<string>5.1</string>
+		<key>changes</key>
+		<array>
+			<string>Lorem ipsum dolor sit amet.</string>
+			<string>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+			<string>Ut enim ad minim veniam.</string>
+		</array>
+	</dict>
+</array>
+</plist>
