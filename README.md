@@ -11,9 +11,9 @@
 
 ## پیش‌نمایش!
 
-<div style='text-align: center;'>
+<p align='center'>
   <img src='./Other/screenshot1.png'>
-</div>
+</p>
 
 <br>
 
