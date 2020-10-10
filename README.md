@@ -14,7 +14,7 @@
 ## پیش‌نمایش!
 
 <p align='center'>
-  <img src='./Other/screenshot2.png'>
+  <img src='./Other/screenshot3.png'>
 </p>
 
 <br>
