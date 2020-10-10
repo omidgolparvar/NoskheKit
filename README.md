@@ -12,7 +12,7 @@
 ## پیش‌نمایش!
 
 <p align='center'>
-  <img src='./Other/screenshot1.png'>
+  <img src='./Other/screenshot2.png'>
 </p>
 
 <br>
