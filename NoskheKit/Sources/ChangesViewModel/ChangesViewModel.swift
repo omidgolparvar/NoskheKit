@@ -31,7 +31,7 @@ final class ChangesViewModel: NSObject {
 		
 		tableView.register(cellType: FutureVersionCell.self)
 		tableView.register(cellType: CurrentVersionCell.self)
-		tableView.register(cellType: OldVersionCell.self)
+		tableView.register(cellClass: OldVersionCell.self)
 		tableView.register(cellType: HeaderFooterCell.self)
 		
 		tableView.contentInset.top = -HeaderFooterCell.Heigth + 100
