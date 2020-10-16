@@ -30,9 +30,9 @@ final class ChangesViewModel: NSObject {
 			: .forceLeftToRight
 		
 		tableView.register(cellClass: FutureVersionCell.self)
-		tableView.register(cellType: CurrentVersionCell.self)
+		tableView.register(cellClass: CurrentVersionCell.self)
 		tableView.register(cellClass: OldVersionCell.self)
-		tableView.register(cellType: HeaderFooterCell.self)
+		tableView.register(cellClass: HeaderFooterCell.self)
 		
 		tableView.contentInset.top = -HeaderFooterCell.Heigth + 100
 		tableView.contentInset.bottom = -HeaderFooterCell.Heigth + 100
