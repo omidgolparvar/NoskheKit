@@ -1,10 +1,3 @@
-//
-//  OldVersionCell.swift
-//  NoskheKit
-//
-//  Created by Omid Golparvar on 10/10/20.
-//
-
 import UIKit
 
 class OldVersionCell: VersionTableViewCell {
@@ -110,7 +103,7 @@ class OldVersionCell: VersionTableViewCell {
 			
 			NSLayoutConstraint.activate([
 				label_Title_.leadingAnchor.constraint(equalTo: view_LineView.leadingAnchor, constant: 24),
-				label_Title_.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 24),
+				label_Title_.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -24),
 				label_Title_.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 24),
 				view_BulletHolderView.centerYAnchor.constraint(equalTo: label_Title_.centerYAnchor, constant: 0),
 			])
@@ -124,7 +117,7 @@ class OldVersionCell: VersionTableViewCell {
 			
 			NSLayoutConstraint.activate([
 				label_Details_.leadingAnchor.constraint(equalTo: view_LineView.leadingAnchor, constant: 24),
-				label_Details_.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 24),
+				label_Details_.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -24),
 				label_Details_.topAnchor.constraint(equalTo: label_Title_.bottomAnchor, constant: 12),
 				label_Details_.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -24),
 			])
