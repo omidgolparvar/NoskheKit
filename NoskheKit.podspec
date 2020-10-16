@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'NoskheKit'
-  s.version               = '1.0.0'
+  s.version               = '1.0.1'
   s.summary               = 'تغییرات هر نسخه رو خیلی قشنگ توضیح بدین!'
   s.description           = 'تغییرات هر نسخه رو خیلی قشنگ توضیح بدین!'
   s.homepage              = 'https://github.com/omidgolparvar/NoskheKit'
@@ -15,7 +15,6 @@ Pod::Spec.new do |s|
   s.source_files          = [
     'NoskheKit/*.{h,swift}',
     'NoskheKit/Sources/**/*.{h,swift}',
-    'NoskheKit/Sources/**/*.xib'
   ]
   s.public_header_files = 'NoskheKit/*.h'
 end
