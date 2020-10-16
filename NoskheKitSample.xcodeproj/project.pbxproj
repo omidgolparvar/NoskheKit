@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A20F79F253A34B4003B8BB6 /* Extensions+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A20F79E253A34B4003B8BB6 /* Extensions+UIColor.swift */; };
 		1A8E8DBA2531BECA00098619 /* NoskheKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A8E8DB82531BECA00098619 /* NoskheKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A8E8DC42531BF4800098619 /* NoskheKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACA227A253101C200D15FD3 /* NoskheKit.swift */; };
 		1A8E8DC52531BF4800098619 /* NKVersionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD1D21F2530E4DC0067F636 /* NKVersionData.swift */; };
@@ -25,10 +26,7 @@
 		1A8E8DD72531BF5A00098619 /* OldVersionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACA22B72531B6A000D15FD3 /* OldVersionCell.swift */; };
 		1A8E8DD82531BF5A00098619 /* VersionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACA229B253145E400D15FD3 /* VersionCell.swift */; };
 		1A8E8DD92531BF5A00098619 /* FutureVersionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACA229625313E3200D15FD3 /* FutureVersionCell.swift */; };
-		1A8E8DDA2531BF5A00098619 /* FutureVersionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ACA229725313E3200D15FD3 /* FutureVersionCell.xib */; };
 		1A8E8DDB2531BF5A00098619 /* CurrentVersionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACA22B22531B3D100D15FD3 /* CurrentVersionCell.swift */; };
-		1A8E8DDC2531BF5A00098619 /* CurrentVersionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ACA22B32531B3D100D15FD3 /* CurrentVersionCell.xib */; };
-		1A8E8DDD2531BF5A00098619 /* OldVersionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ACA22B82531B6A000D15FD3 /* OldVersionCell.xib */; };
 		1A8E8E112531C72600098619 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8E8E102531C72600098619 /* AppDelegate.swift */; };
 		1A8E8E152531C72600098619 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8E8E142531C72600098619 /* ViewController.swift */; };
 		1A8E8E182531C72600098619 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8E8E162531C72600098619 /* Main.storyboard */; };
@@ -36,7 +34,6 @@
 		1A8E8E1D2531C72700098619 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8E8E1B2531C72700098619 /* LaunchScreen.storyboard */; };
 		1A8E8E242531C76200098619 /* Versions-EN.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A8E8D962531BB6100098619 /* Versions-EN.plist */; };
 		1A8E8E3F2531D46A00098619 /* HeaderFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8E8E3D2531D46A00098619 /* HeaderFooterCell.swift */; };
-		1A8E8E402531D46A00098619 /* HeaderFooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A8E8E3E2531D46A00098619 /* HeaderFooterCell.xib */; };
 		1A8E8E462531D56B00098619 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8E8E452531D56B00098619 /* TableViewCell.swift */; };
 		1A8E8E4C2531DED200098619 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8E8E4B2531DED200098619 /* GradientView.swift */; };
 		1A8E8E562531EDC600098619 /* Extensions+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8E8E552531EDC600098619 /* Extensions+String.swift */; };
@@ -50,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A20F79E253A34B4003B8BB6 /* Extensions+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIColor.swift"; sourceTree = "<group>"; };
 		1A8E8D962531BB6100098619 /* Versions-EN.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Versions-EN.plist"; sourceTree = "<group>"; };
 		1A8E8DB62531BECA00098619 /* NoskheKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NoskheKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A8E8DB82531BECA00098619 /* NoskheKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoskheKit.h; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 		1A8E8E1C2531C72700098619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A8E8E1E2531C72700098619 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A8E8E3D2531D46A00098619 /* HeaderFooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderFooterCell.swift; sourceTree = "<group>"; };
-		1A8E8E3E2531D46A00098619 /* HeaderFooterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderFooterCell.xib; sourceTree = "<group>"; };
 		1A8E8E452531D56B00098619 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		1A8E8E4B2531DED200098619 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		1A8E8E552531EDC600098619 /* Extensions+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+String.swift"; sourceTree = "<group>"; };
@@ -80,15 +77,12 @@
 		1ACA229025313B7500D15FD3 /* ChangesViewModel+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChangesViewModel+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		1ACA229325313BA000D15FD3 /* ChangesViewModel+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChangesViewModel+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		1ACA229625313E3200D15FD3 /* FutureVersionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureVersionCell.swift; sourceTree = "<group>"; };
-		1ACA229725313E3200D15FD3 /* FutureVersionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FutureVersionCell.xib; sourceTree = "<group>"; };
 		1ACA229B253145E400D15FD3 /* VersionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionCell.swift; sourceTree = "<group>"; };
 		1ACA229F2531A31C00D15FD3 /* NKVersionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKVersionStatus.swift; sourceTree = "<group>"; };
 		1ACA22A32531A59600D15FD3 /* NKVersionNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKVersionNumber.swift; sourceTree = "<group>"; };
 		1ACA22AF2531B28500D15FD3 /* Extensions+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UITableView.swift"; sourceTree = "<group>"; };
 		1ACA22B22531B3D100D15FD3 /* CurrentVersionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentVersionCell.swift; sourceTree = "<group>"; };
-		1ACA22B32531B3D100D15FD3 /* CurrentVersionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentVersionCell.xib; sourceTree = "<group>"; };
 		1ACA22B72531B6A000D15FD3 /* OldVersionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldVersionCell.swift; sourceTree = "<group>"; };
-		1ACA22B82531B6A000D15FD3 /* OldVersionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OldVersionCell.xib; sourceTree = "<group>"; };
 		1AD1D21A2530E2CE0067F636 /* NKMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKMainController.swift; sourceTree = "<group>"; };
 		1AD1D21F2530E4DC0067F636 /* NKVersionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKVersionData.swift; sourceTree = "<group>"; };
 		1AD1D2262530EC080067F636 /* Extensions+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Array.swift"; sourceTree = "<group>"; };
@@ -149,6 +143,7 @@
 				1AD1D2292530F0A20067F636 /* Extensions+Bundle.swift */,
 				1ACA22AF2531B28500D15FD3 /* Extensions+UITableView.swift */,
 				1A8E8E552531EDC600098619 /* Extensions+String.swift */,
+				1A20F79E253A34B4003B8BB6 /* Extensions+UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -169,13 +164,9 @@
 				1A8E8E452531D56B00098619 /* TableViewCell.swift */,
 				1ACA229B253145E400D15FD3 /* VersionCell.swift */,
 				1ACA229625313E3200D15FD3 /* FutureVersionCell.swift */,
-				1ACA229725313E3200D15FD3 /* FutureVersionCell.xib */,
 				1ACA22B22531B3D100D15FD3 /* CurrentVersionCell.swift */,
-				1ACA22B32531B3D100D15FD3 /* CurrentVersionCell.xib */,
 				1ACA22B72531B6A000D15FD3 /* OldVersionCell.swift */,
-				1ACA22B82531B6A000D15FD3 /* OldVersionCell.xib */,
 				1A8E8E3D2531D46A00098619 /* HeaderFooterCell.swift */,
-				1A8E8E3E2531D46A00098619 /* HeaderFooterCell.xib */,
 			);
 			path = VersionTableViewCells;
 			sourceTree = "<group>";
@@ -310,10 +301,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A8E8DDC2531BF5A00098619 /* CurrentVersionCell.xib in Resources */,
-				1A8E8E402531D46A00098619 /* HeaderFooterCell.xib in Resources */,
-				1A8E8DDA2531BF5A00098619 /* FutureVersionCell.xib in Resources */,
-				1A8E8DDD2531BF5A00098619 /* OldVersionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +344,7 @@
 				1A8E8DD32531BF5300098619 /* ChangesViewModel+UITableViewDelegate.swift in Sources */,
 				1A8E8DD72531BF5A00098619 /* OldVersionCell.swift in Sources */,
 				1A8E8DC82531BF4800098619 /* NKVersionStatus.swift in Sources */,
+				1A20F79F253A34B4003B8BB6 /* Extensions+UIColor.swift in Sources */,
 				1A8E8DCE2531BF4D00098619 /* Extensions+UITableView.swift in Sources */,
 				1A8E8DD42531BF5300098619 /* ChangesViewModel.swift in Sources */,
 				1A8E8E562531EDC600098619 /* Extensions+String.swift in Sources */,
