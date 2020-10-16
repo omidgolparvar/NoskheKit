@@ -29,7 +29,7 @@ final class ChangesViewModel: NSObject {
 			? .forceRightToLeft
 			: .forceLeftToRight
 		
-		tableView.register(cellType: FutureVersionCell.self)
+		tableView.register(cellClass: FutureVersionCell.self)
 		tableView.register(cellType: CurrentVersionCell.self)
 		tableView.register(cellClass: OldVersionCell.self)
 		tableView.register(cellType: HeaderFooterCell.self)

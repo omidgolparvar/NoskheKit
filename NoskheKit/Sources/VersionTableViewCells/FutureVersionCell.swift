@@ -1,12 +1,21 @@
 import UIKit
 
-class FutureVersionCell: VersionTableViewCell {
+class FutureVersionCell: OldVersionCell {
 	
-	@IBOutlet weak var view_Bullet		: UIView!
+	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+		super.init(style: style, reuseIdentifier: reuseIdentifier)
+		
+		let bulletViewBackgroundColor: UIColor
+		if #available(iOS 13, *) {
+			bulletViewBackgroundColor = .systemBlue
+		} else {
+			bulletViewBackgroundColor = .blue
+		}
+		setBulletViewColor(to: bulletViewBackgroundColor)
+	}
 	
-    override func awakeFromNib() {
-        super.awakeFromNib()
-		view_Bullet.layer.cornerRadius = view_Bullet.frame.height / 2
-    }
-    
+	required init?(coder: NSCoder) {
+		fatalError("init(coder:) has not been implemented")
+	}
+	
 }
